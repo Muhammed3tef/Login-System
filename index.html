@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------------font family-------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="inner-item">
+          <div class="item text-center mt-5 p-5">
+            <h1 class="fw-bolder mainText">Smart Login System</h1>
+            <div class="inputs mt-5 w-75 m-auto">
+              <input
+              id="inputName"
+                type="text"
+                name="userName"
+                class="form-control d-none"
+                placeholder="Enter Your Name"
+                oninput="validation(this)"
+              />
+              <input
+              id="inputEmail"
+                type="email"
+                name="userEmail"
+                class="form-control my-3"
+                placeholder="Enter Your Email"
+                oninput="validation(this)"
+              />
+              <input
+              id="inputPassword"
+                type="password"
+                name="userPassword"
+                class="form-control"
+                placeholder="Enter Your Password"
+                oninput="validation(this)"
+               
+              />
+              <p class="mt-4 fw-bolder d-none text-black" id="requiredInputs">All inputs is required </p>
+              <p class="mt-4 fw-bolder d-none text-black" id="existing">Email is Existing </p>
+              <button class="signUp w-100 p-2 rounded-2 border-0 my-5" id="btn1">
+              Login
+              </button>
+              <button class="signUp w-100 p-2 rounded-2 border-0 my-5 d-none" id="btn2">
+                Sign Up
+              </button>
+              <p class="me-3 fw-medium" id="linkOfSign">
+                Don’t have an account? <span><a href="#" onclick="addBotton()" >Sign Up</a> </span>
+              </p>
+              <p class="me-3 d-none fw-medium" id="linkOfSign1">
+                You have an account? <span><a href="#" onclick="removeBotton()" >Sign In</a> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lnyar">
+      <div class="container">
+        <div class="row">
+            <div class="last-item position-absolute top-0 start-0 end-0 bottom-0 d-none d-flex justify-content-center align-items-center" id="lastItem" >
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
