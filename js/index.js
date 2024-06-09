@@ -60,6 +60,7 @@ btn1.addEventListener("click",function(){
             lastItem.innerHTML=`
             <h1 class="animate__animated animate__fadeInLeft fw-semibold " id="fontInfo">Hello ${arr[i].code}</h1>
             `;
+            existing.classList.add("d-none")
             lastItem.classList.replace("d-none","d-flex")
             clear()
         }
